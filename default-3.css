@@ -1,0 +1,56 @@
+.msfavorites {
+}
+
+span.msfavorites .msfavorites-total {
+    display: inline-block;
+}
+
+a.msfavorites-link {
+    text-decoration: none;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+
+a.msfavorites-link:hover {
+    border-bottom-style: solid;
+}
+
+a.msfavorites-link.active {
+    border-bottom: none;
+    background: #efefef;
+    color: black;
+}
+
+.msfavorites .loading {
+    opacity: .7;
+    cursor: default;
+}
+
+.msfavorites .loading:hover {
+    text-decoration: none;
+}
+
+.msfavorites a:hover, .msfavorites a:focus {
+    color: #2A6496;
+    text-decoration: none;
+}
+
+.msfavorites .msfavorites-add {
+    display: inline-block;
+}
+
+.msfavorites .msfavorites-remove,
+.msfavorites .msfavorites-go,
+.msfavorites .msfavorites-total {
+    display: none;
+}
+
+.msfavorites[data-added="added"] .msfavorites-add {
+    display: none;
+}
+
+.msfavorites[data-added="added"] .msfavorites-remove,
+.msfavorites[data-added="added"] .msfavorites-go,
+.msfavorites[data-added="added"] .msfavorites-total {
+    display: inline-block;
+}
